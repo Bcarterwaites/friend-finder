@@ -35,14 +35,14 @@ app.post("/api/friends", function(req, res) {
 
     // Loops through all the friend possibilities in the database
     for (var i = 0; i < friends.length; i ++) {
-        var currentFriendData = friends[i];
+        var currentFriend = friends[i];
         totalDifference = 0;
 
         console.log(currentFriend.name)
 
         // We then loop through all the scores of each friend
-        for (var j = 0; j < currentFriendData.scores.length; j++) {
-            var currentFriendScore = currentFriendData.scores[j];
+        for (var j = 0; j < currentFriend.scores.length; j++) {
+            var currentFriendScore = currentFriend.scores[j];
             var currentUserScore = userScores[j];
 
             // We calculate the difference between the scores and sum them into the totalDifference
