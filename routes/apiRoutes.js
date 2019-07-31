@@ -34,7 +34,7 @@ app.post("/api/friends", function(req, res) {
     var totalDifference; 
 
     // Loops through all the friend possibilities in the database
-    for (var i = 0; i < friendData.length; i ++) {
+    for (var i = 0; i < friends.length; i ++) {
         var currentFriendData = friends[i];
         totalDifference = 0;
 
