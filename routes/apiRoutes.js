@@ -1,7 +1,7 @@
 //Load API Data
 //=====================================
 
-var friendData = require('../app/data/friendArr');
+var friends = require('../app/data/friends');
 
 
 //Routing 
@@ -10,14 +10,14 @@ var friendData = require('../app/data/friendArr');
 module.exports = function(app) {
 
 
-app.get("/api/friend", function(req, res) {
-    res.json(friendData);
+app.get("/api/friends", function(req, res) {
+    res.json(friends);
 
 
 
 });
 
-app.post("/api/friend", function(req, res) {
+app.post("/api/friends", function(req, res) {
     var bestMatch = {
         name: "",
         photo: "",
@@ -35,7 +35,7 @@ app.post("/api/friend", function(req, res) {
 
     // Loops through all the friend possibilities in the database
     for (var i = 0; i < friendData.length; i ++) {
-        var currentFriendData = friendData[i];
+        var currentFriendData = friends[i];
         totalDifference = 0;
 
         console.log(currentFriend.name)
@@ -59,7 +59,7 @@ app.post("/api/friend", function(req, res) {
 
     // Finally save the user's data to the database 
     // the database will always return that the user is the user's best friend
-    friendData.push(userData);
+    friends.push(userData);
 
     // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
     res.json(bestMatch)
