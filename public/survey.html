@@ -104,7 +104,7 @@
             <option value="1">Skittles</option>
             <option value="2">Starburst</option>
             <option value="3">Jolly Ranchers</option>
-            <option value="4">Sweet tarts</option>
+            <option value="4">Sweettarts</option>
           </select>
 
           <br>
@@ -264,7 +264,7 @@
         };
 
         // Ajax post the data to the friend API
-        $.post("/api/friends", function(data) {
+        $.post("/api/friends", userData, function(data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
