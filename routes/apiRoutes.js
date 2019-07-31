@@ -26,7 +26,7 @@ app.post("/api/friends", function(req, res) {
 
     // Takes the result of the user's survey POST and parse it 
     var userData = req.body;
-    var userScores = userData.userScores;
+    var userScores = userData.scores;
 
     // This variable calculates the difference between the user's scores and the scores of
     // each user in the database
