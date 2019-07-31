@@ -1,7 +1,7 @@
 //Load API Data
 //=====================================
 
-var friendData = require('../app/data/friend');
+var friendData = require('../app/data/friendArr');
 
 
 //Routing 
