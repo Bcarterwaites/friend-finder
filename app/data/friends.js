@@ -1,7 +1,7 @@
 var friends = [
     {
     name: "Steven",
-    photo: "https://en.wikipedia.org/wiki/Steven_Universe_(character)#/media/File:Steven_Universe.png",
+    photo: "https://upload.wikimedia.org/wikipedia/en/f/fd/Steven_Quartz_Universe.png",
     scores: [
         "2",
         "3",
@@ -38,7 +38,7 @@ var friends = [
 },
 {
     name: "Finn",
-    photo: "https://en.wikipedia.org/wiki/Finn_the_Human#/media/File:FinnAdventureTime.png",
+    photo: "https://upload.wikimedia.org/wikipedia/en/e/e5/FinnAdventureTime.png",
     scores: [
         "3",
         "4",
@@ -58,7 +58,7 @@ var friends = [
 },
 {
     name: "Margret",
-    photo: "https://regularshow.fandom.com/wiki/Margaret?file=Reg_margaret.png",
+    photo: "https://vignette.wikia.nocookie.net/theregularshow/images/9/9b/Reg_margaret.png/revision/latest?cb=20190612191810",
     scores: [
         "4",
         "4",
