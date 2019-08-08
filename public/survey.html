@@ -170,7 +170,9 @@
        <div class="container">
          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/Bcarterwaites/friend-finder">GitHub Repo</a></p>
        </div>
-       
+     </footer>
+        </div>
+        
        <div id="results-modal" class="modal fade" role="dialog">
          <div class="modal-dialog">
            <div class="modal-content">
@@ -271,7 +273,7 @@
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
-          $("results-modal").modal("toggle");
+          $("#results-modal").modal("toggle");
       });
     } else {
       alert("Please fill out all fields before submitting!")
